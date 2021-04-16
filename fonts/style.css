@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Ivansuarez';
+  src:
+    url('Ivansuarez.ttf?bmwxqe') format('truetype'),
+    url('Ivansuarez.woff?bmwxqe') format('woff'),
+    url('Ivansuarez.svg?bmwxqe#Ivansuarez') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Ivansuarez' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-remove-user:before {
+  content: "\e917";
+}
+.icon-warning:before {
+  content: "\e918";
+}
+.icon-add-user:before {
+  content: "\e913";
+}
+.icon-address:before {
+  content: "\e912";
+}
+.icon-archive:before {
+  content: "\e919";
+}
+.icon-credit-card:before {
+  content: "\e91a";
+}
+.icon-home:before {
+  content: "\e915";
+}
+.icon-list:before {
+  content: "\e914";
+}
+.icon-lock:before {
+  content: "\e91b";
+}
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-old-mobile:before {
+  content: "\e901";
+}
+.icon-price-tag:before {
+  content: "\e91c";
+}
+.icon-shop:before {
+  content: "\e91d";
+}
+.icon-shopping-cart:before {
+  content: "\e91e";
+}
+.icon-star:before {
+  content: "\e902";
+}
+.icon-user:before {
+  content: "\e916";
+}
+.icon-users:before {
+  content: "\e903";
+}
+.icon-v-card:before {
+  content: "\e904";
+}
+.icon-wallet:before {
+  content: "\e905";
+}
+.icon-paypal:before {
+  content: "\e906";
+}
+.icon-facebook-with-circle:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-google-with-circle:before {
+  content: "\e909";
+}
+.icon-google:before {
+  content: "\e90a";
+}
+.icon-instagram-with-circle:before {
+  content: "\e90b";
+}
+.icon-instagram:before {
+  content: "\e90c";
+}
+.icon-pinterest:before {
+  content: "\e90d";
+}
+.icon-twitter-with-circle:before {
+  content: "\e90e";
+}
+.icon-twitter:before {
+  content: "\e90f";
+}
+.icon-youtube-with-circle:before {
+  content: "\e910";
+}
+.icon-youtube:before {
+  content: "\e911";
+}

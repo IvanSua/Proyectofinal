@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: salmon;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+.social{                /*parte izq. Redes sociales*/
+    position: fixed;
+    left: 0%;
+    top: 100px;
+    z-index:200;
+    }
+    .social ul{
+        list-style: none;
+    }
+    .social ul li a{
+        display: inline-block;
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease; 
+        height: 40px;
+        width: 45px;
+    }
+    
+    .fa-facebook-f{
+        background:#3b5998;
+    }
+    .fa-amazon{
+        background:#e47911;
+    
+    }
+    .fa-twitter{
+        background:#00acee;
+    }
+    .fa-google{
+        background:#db4a39;
+    }
+    .fa-instagram{
+        background:#8134af ;
+    }
+    .fa-youtube{
+        background:#c4302b ;
+    }
+    .fa-mail{
+        background: grey;
+    }
+
+    .social ul li a:hover{
+        padding: 10px 30px;
+        background: #000;
+    }
+.container {               /*Ficha de contacto */
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: #B70E21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+#btnSend,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#btnSend{
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+#btnSend:hover,
+#btnSend:focus {
+    background: violet;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* informacion de contacto */
+.contact-info {
+    background: cadetblue;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* responsive */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+/*contenedor de errores*/
+.modal-wrap{
+    width: 100%;
+    padding: 100px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje-modal{
+    background: #fff;
+    color: black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+.mensaje-modal h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.mensaje-modal h3:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c5c5c5;
+    margin: 10px 0px 15px;
+}
+.mensaje-modal p{
+    font-size: 16px;
+    color: #606060;
+}
+.mensaje-modal p:before{
+    display: inline-block;
+    color: brown;
+    margin-right: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: "X";
+    
+}
+.mensaje-modal #btnClose{
+    display: inline;
+    padding: 3px 10px;
+    margin-top: 10px;
+    background: #e25151;
+    color: #fff;
+    border: 2px solid #b14141;
+    cursor: pointer;
+    float: right;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ivan-Suarez-Ezequiel">
+    <meta name="copyright" content="curso-utn-2021" />
+    <meta name="description" content="Registrate para iniciar sesion en nuestra pagina lovepets">
+    <meta name="keywords" content="">
+    <meta http-equiv="cache-control" content="no-cache"/> <!--por si se actualiza constantemente-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" user-scalable=no>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contacto.css">
+    
+
+    <title>Love Pets-Contactanos</title>
+</head>
+<div class="social"> <!--falta las paginas y los iconos correspondiente-->
+    <ul>
+        <li><a href="http://www.amazon.com" class="fab fa-amazon" target="_blank"></a></li>
+        <li><a href="http://www." class="fab fa-facebook-f" target="_blank"></a></li>
+        <li><a href="http://www." class="fab fa-twitter" target="_blank"></a></li>
+        <li><a href="http://www." class="fab fa-google" target="_blank"></a></li>
+        <li><a href="http://www." class="fab fa-instagram" target="_blank"></a></li>
+        <li><a href="http://www." class="fab fa-youtube" target="_blank"></a></li>
+    </ul>
+</div>
+
+<div class="content">
+
+    <h1 class="logo"><span>Ayudanos</span> a mejorar</h1>
+
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <h3>Contactanos</h3>
+            <form action="enviar.php" method="POST" class="form-contact">
+                <p>
+                    <label>Nombre completo*</label>
+                    <input type="text" name="name"  id="name"    minlength="3" required>
+                </p>
+                <p>
+                    <label>Direccion de e-mail*</label>
+                    <input type="email" name="email"    id="email"   maxlength="40" minlength="3" required>
+                </p>
+                <p>
+                    <label>Numero Telefeonico</label>
+                    <input type="tel" name="telefono"      id="telefono" pattern="[0-9]+">
+                </p>
+                <p>
+                    <label>Asunto*</label>
+                    <input type="text" name="asunto"    id="asunto"   maxlength="40" minlength="3" required>
+                </p>
+                <p class="block">
+                   <label>Mensaje*</label> 
+                    <textarea name="mensaje" rows="3"   id="mensaje"  maxlength="500" minlength="1" required></textarea>
+                </p>
+                <p class="block">
+                    <input type="submit" value="Enviar mensaje" id="btnSend">
+                </p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h4>More Info</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Avenida Siempre Viva 123</li>
+                <li><i class="fas fa-phone"></i> + 9 111 111 111</li>
+                <li><i class="fas fa-envelope-open-text"></i> lovepets@gmail.com</li>
+            </ul>
+            <p>Cual quier duda o consulta que no puedas resolver o inconveniente a dentro de nuestras paginas por favor, hacenos saber a travez de este sitio o comunicando via email. Desde ya muchas gracias. </p>
+            
+            <a href="../index.html">lovepets.com</a>
+        </div>
+    </div>
+
+</div>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/contacto.js"></script>
+
+</body>
+
+</html>
